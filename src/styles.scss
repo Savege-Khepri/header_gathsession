@@ -1,0 +1,161 @@
+@use 'mixins.scss' as mx;
+
+//variables
+
+$pink: #DB2A6B;
+$blue: #264065;
+$black: #070D15;
+$gray: #ABABAB;
+$principal-font: "Merriweather", serif;
+$secondary-font: "Poppins", sans-serif;
+
+html {
+    background: #2B2D38 ;
+    font-family: $principal-font;
+    background-image: url("../img/ellipse.png"), url("../img/ellipse-1.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 170% -200%, 10% 150% ;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    gap: 50px;
+}
+    
+header {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    img {
+        margin: 20px 0;
+        width: 160px;
+        height: auto;
+    }
+    
+    ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        margin-right: 40px; ;
+
+        li {
+            font-family: $secondary-font;
+            font-weight: 500;
+            font-size: .8rem;
+            cursor: pointer;
+
+           a {
+            text-decoration: none;
+            color: $gray;
+
+                &:hover {
+                    color: white;
+                    position: relative;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: -6px;
+                        width: 70%;
+                        height: 3px;
+                        background: $pink;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 70px;
+    flex-direction: column;
+    width: 570px;
+
+    h1 {
+        margin: 0;
+        font-size: 3.9rem;
+        color: white;
+        line-height: 1.2;
+        font-weight: 600;
+    }
+    p {
+        color: $gray;
+        font-size: 1.3rem;
+        line-height: 1.8;
+        font-family: $secondary-font;
+        font-weight: 300;
+    }
+    a:first-of-type {
+        @include mx.button($pink, white);
+        font-family: $secondary-font;
+
+        
+    }
+    a:nth-of-type(2) {
+        @include mx.button(transparent, white);
+        border: 2px solid white;
+        margin-left: 20px;
+        font-family: $secondary-font;
+
+
+        &:hover {
+            background: white;
+            color: $pink;
+        }
+    }
+    .numbers {
+        margin-top: 80px;
+        margin-bottom: 40px;
+        display: flex;
+        gap: 35px;
+
+        .number {
+            box-sizing: border-box;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                background: #FFFFFF40;
+                border-radius: 15px;
+                padding: 10px;
+            }
+
+            span {
+                font-family: $secondary-font;
+                color: white;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.plantilla {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    height: 600px;
+    justify-content: center;
+
+    img.lrg {
+        width: 180px;
+        height: auto;
+    }
+    img.sml {
+        width: 180px;
+        height: 180px;
+    }
+}
