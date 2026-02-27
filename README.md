@@ -13,10 +13,10 @@ El encabezado de la página web Gath Session está diseñado para pantallas con 
 
 ## Vista previa en vivo 🌟
 
-Puedes ver una vista previa en vivo del encabezado ![Web Spa](/img/Projectos-CSS-2-Header-GathSession.png)
+Puedes ver una vista previa en vivo del encabezado ![Web Spa](Projectos-CSS-2-Header-GathSession.png)
 
 <p align="center">
-   <a href="src/">
+   <a href="/">
       <img src="https://img.shields.io/badge/-Ver_Codigo-hotpink?style=for-the-badge" alt="badge">
    </a>
    
