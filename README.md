@@ -13,7 +13,7 @@ El encabezado de la página web Gath Session está diseñado para pantallas con 
 
 ## Vista previa en vivo 🌟
 
-Puedes ver una vista previa en vivo del encabezado ![Web Spa](/img/Projectos-CSS-1-Business-Agency.png)
+Puedes ver una vista previa en vivo del encabezado ![Web Spa](/img/Projectos-CSS-2-Header-GathSession.png)
 
 <p align="center">
    <a href="src/">
